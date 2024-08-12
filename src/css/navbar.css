@@ -1,0 +1,126 @@
+@import url(root.css);
+
+.nav_bar {
+    width: 100vw;
+    height: 80px;
+    background-color: var(--8);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+.nav_menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--52);
+    z-index: 1000;
+    transition: .5s all ease;
+    margin: 0;
+}
+
+.nav_menu.show {
+    right: 0;
+}
+
+#ham_burger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 8px;
+    z-index: 2000;
+    transition: 0.5s ease all;
+}
+
+.hamburger_line {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--nuetral);
+    transition: 0.5s ease all;
+}
+
+#ham_burger.open {
+    gap: 0px;
+    transform: rotate(45deg);
+}
+
+#ham_burger.open .hamburger_line:nth-child(1){
+    transform: translateY(1.5px) rotate(90deg);
+}
+
+#ham_burger.open .hamburger_line:nth-child(2){
+    display: none;
+}
+
+.nav_menu_one {
+    background-color: var(--52);
+    padding-top: 10%;
+    padding-left: 3%;
+}
+
+.nav_menu_two {
+    background-color: var(--8);
+    transform-origin: right;
+    position: relative;
+}
+
+.nav_menu_two::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--52);
+    transform-origin: left;
+}
+
+.nav_menu.show .nav_menu_two::after {
+    animation: slide 0.5s ease 0.5s both;
+}
+
+.nav_link ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-family: var(--main-font);
+    align-items: baseline;
+    margin-bottom: 3%;
+}
+
+.nav_link ul li span {
+    transform: rotate(270deg);
+    font-size: 1.8vw;
+    color: var(--8);
+    padding-left: 5px;
+}
+
+.nav_link ul li .nav_link {
+    text-decoration: none;
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 87px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--8);
+    transition: 0.5s all ease;
+}
+
+.nav_link ul li .nav_link:hover ,.nav_link ul li .nav_link.active{
+    color: var(--8);
+}
+
+@keyframes slide {
+    to {
+        transform: scaleX(0);
+    }
+}

@@ -1,0 +1,11 @@
+@import url(./css/root.css);
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--8);
+}

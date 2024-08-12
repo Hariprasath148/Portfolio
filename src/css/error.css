@@ -1,0 +1,67 @@
+@import url(./root.css);
+
+.error_container {
+    height: 100vh;
+    margin: 0;
+}
+
+.error_inner_containers:nth-child(1) div{
+    width: 100%;
+    font-family: var(--main-font);
+    color: var(--62);
+}
+
+#error_txt {
+    font-family: var(--second-font);
+    font-size: 1vw;
+    font-weight: 600;
+    margin: 0;
+}
+
+#error_tag {
+    font-size: 5vw;
+    color: var(--62);
+    line-height: 92px;
+    margin: 0;
+}
+
+#error_para {
+    font-family: var(--second-font);
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.error_home_button {
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 0.2vw 3vw;
+    background-color: var(--42);
+    border-radius: 20px;
+    color: var(--15);
+}
+
+.error_home_button:hover {
+    background-color: var(--92);
+}
+
+@media (max-width : 992px) {
+
+    #error_txt {
+        font-size: 3vw;
+    }
+
+    #error_tag {
+        font-size: 10vw;
+    }
+
+    #error_para {
+        font-size: 3vw;
+    }
+
+    .error_home_button {
+        font-size: 4vw;
+        padding: 1vw 10vw;
+        border-radius: 50px;
+    }
+
+}

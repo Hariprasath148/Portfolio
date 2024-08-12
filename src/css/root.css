@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --8: hsl(220deg 7.32% 8.04%);
+    --12: hsla(210, 7%, 12%, 1);
+    --15: hsla(216, 6%, 15%, 1);
+    --22: hsla(210, 7%, 22%, 1);
+    --32: hsla(210, 7%, 32%, 1);
+    --42: hsla(210, 7%, 42%, 1);
+    --52: hsla(210, 7%, 52%, 1);
+    --62: hsla(210, 7%, 62%, 1);
+    --72: hsla(200, 7%, 72%, 1);
+    --82: hsla(200, 7%, 82%, 1);
+    --92: hsla(200, 7%, 92%, 1);
+    --nuetral: white;
+    --main-font : "Bebas Neue", sans-serif;
+    --second-font : "Montserrat", sans-serif ;
+}
