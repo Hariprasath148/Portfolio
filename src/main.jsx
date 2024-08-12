@@ -4,13 +4,15 @@ import './index.css'
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import Home from './pages/Home';
 import Error from './pages/Error';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   { path:"/", element:<Home/>},
   { path:"*", element:<Error/>},
+  { path:"/about", element:<About/>},
   ],
   {
-    basename: "/portfolio/",
+    basename: "/portfolio/", 
   }
 );
 
