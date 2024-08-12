@@ -8,7 +8,11 @@ import Error from './pages/Error';
 const router = createBrowserRouter([
   { path:"/", element:<Home/>},
   { path:"*", element:<Error/>},
-]);
+  ],
+  {
+    basename: "/portfolio/",
+  }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
