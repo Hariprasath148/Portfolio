@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 
 const router = createBrowserRouter([
-  { path:"/home", element:<Home/>},
+  { path:"/", element:<Home/>},
   { path:"*", element:<Error/>},
 ]);
 
