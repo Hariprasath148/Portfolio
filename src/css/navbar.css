@@ -124,3 +124,12 @@
         transform: scaleX(0);
     }
 }
+
+@media (max-width : 992px) {
+    .nav_link ul li span {
+        font-size: 5.8vw;
+    }
+    .nav_link ul li .nav_link {
+        font-size: 14vw;
+    }
+}
