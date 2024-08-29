@@ -1,13 +1,25 @@
 import { NavLink } from 'react-router-dom';
 import '../css/navbar.css';
+import logo_dark  from '../assets/images/strokedark.png';
 
 export default function NavBar() {
     function opennav(){
         document.querySelector(".nav_menu").classList.toggle("show");
         document.querySelector("#ham_burger").classList.toggle("open");
     }
+
+    function change_theme(){
+        document.querySelector("body").classList.toggle("dark"); 
+    }
+
     return <>
         <div className="nav_bar">
+            <div id="logo">
+                <NavLink id='logo_link' to="/">
+                    <img src={logo_dark} alt="logo" />
+                </NavLink>
+            </div>
+            <input type="checkbox" name="theme_switch" id="switch_theme" onChange={change_theme} />
             <div id="ham_burger" className="" onClick={opennav}>
                 <span className="hamburger_line"></span>
                 <span className="hamburger_line"></span>

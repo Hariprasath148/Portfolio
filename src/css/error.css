@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+#error_video {
+    width: 100%;
+}
+
 #error_para {
     font-family: var(--second-font);
     font-size: 1vw;

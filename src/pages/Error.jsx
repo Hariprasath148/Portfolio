@@ -1,5 +1,5 @@
 import "../css/error.css"
-import ErrorVideo from "../assets/videos/errorvideo.mp4"
+import ErrorVideo from "../assets/videos/Error.gif"
 import { NavLink } from 'react-router-dom';
 
 export default function Error() {
@@ -14,10 +14,7 @@ export default function Error() {
             </div>
         </div>
         <div className="col-lg-6 error_inner_containers justify-content-center align-content-center">
-          <video width="100%" height="auto" autoPlay muted loop>
-            <source src={ErrorVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img id="error_video" src={ErrorVideo} alt="......" />
         </div>
     </div>
   </>
